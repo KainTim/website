@@ -1,0 +1,68 @@
+<div class="page-wrap">
+  <header class="hero section" id="top">
+    <p class="eyebrow">Available for full-time and freelance work</p>
+    <h1>{{ hero.name }}</h1>
+    <p class="hero-role">{{ hero.role }}</p>
+    <p class="hero-intro">{{ hero.intro }}</p>
+    <p class="hero-focus">{{ hero.focus }}</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" routerLink="/about">About Me</a>
+      <a class="btn btn-ghost" routerLink="/contact">Contact</a>
+    </div>
+  </header>
+
+  <section class="section" id="stack">
+    <div class="section-title-row">
+      <h2>Tech Stack</h2>
+      <p>Primary technologies I use to deliver production-ready software.</p>
+    </div>
+    <div class="card-grid">
+      @for (skill of skills; track skill.name) {
+      <app-card cardClass="skill-card">
+        <h3>{{ skill.name }}</h3>
+        <p class="meta">{{ skill.category }} - {{ skill.level }}</p>
+      </app-card>
+      }
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section-title-row">
+      <h2>Featured Projects</h2>
+      <p>Recent work across web platforms, APIs, and mobile apps.</p>
+    </div>
+    <div class="card-grid projects-grid">
+      @for (project of projects; track project.title) {
+      <app-card cardClass="project-card">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <p class="meta">{{ project.stack.join(' - ') }}</p>
+        <p class="impact">{{ project.impact }}</p>
+      </app-card>
+      }
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      @for (item of timeline; track item.role + item.company) {
+      <article class="timeline-item">
+        <div>
+          <h3>{{ item.role }}</h3>
+          <p class="meta">{{ item.company }} - {{ item.period }}</p>
+        </div>
+        <ul>
+          @for (highlight of item.highlights; track highlight) {
+          <li>{{ highlight }}</li>
+          }
+        </ul>
+      </article>
+      }
+    </div>
+  </section>
+
+  <footer class="section footer">
+    <p>(c) {{ currentYear }} {{ hero.name }} - Fullstack Developer (Angular - C# - Flutter)</p>
+  </footer>
+</div>

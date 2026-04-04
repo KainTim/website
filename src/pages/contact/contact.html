@@ -1,0 +1,35 @@
+<div class="page">
+  <section class="hero section">
+    <p class="eyebrow">Contact</p>
+    <h1>Let’s build something polished, useful, and fast.</h1>
+    <p class="lede">
+      If you have a product idea, an open role, or an app that needs a reliable fullstack hand,
+      I’d be happy to talk.
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="card-grid">
+      @for (channel of channels; track channel.label) {
+      <app-card cardClass="contact-card">
+        <p class="label">{{ channel.label }}</p>
+        @if (channel.href) {
+        <a [href]="channel.href">{{ channel.value }}</a>
+        } @else {
+        <p class="value">{{ channel.value }}</p>
+        }
+      </app-card>
+      }
+    </div>
+  </section>
+
+  <section class="section note">
+    <app-card>
+      <h2>Preferred first step</h2>
+      <p>
+        Send a short message with your goals, timeline, and the stack you’re using. I’ll reply
+        with a clear next step.
+      </p>
+    </app-card>
+  </section>
+</div>

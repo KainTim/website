@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+:host(.card) {
+  display: block;
+  padding: 1.2rem;
+  border: 1px solid #30363d;
+  border-radius: 14px;
+  background: #161b22;
+}

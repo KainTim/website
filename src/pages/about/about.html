@@ -1,0 +1,36 @@
+<div class="page">
+  <section class="hero section">
+    <p class="eyebrow">About</p>
+    <h1>Fullstack developer crafting modern web, backend, and mobile products.</h1>
+    <p class="lede">
+      I am Alex Carter, and I enjoy building software that feels clean, fast, and reliable from
+      the first screen to the last API call.
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="section-title-row">
+      <h2>What I bring</h2>
+      <p>Core strengths across the stack.</p>
+    </div>
+    <div class="card-grid">
+      @for (pillar of pillars; track pillar.title) {
+      <app-card>
+        <h3>{{ pillar.title }}</h3>
+        <p>{{ pillar.description }}</p>
+      </app-card>
+      }
+    </div>
+  </section>
+
+  <section class="section story">
+    <app-card>
+      <h2>How I work</h2>
+      <ul>
+        @for (value of values; track value) {
+        <li>{{ value }}</li>
+        }
+      </ul>
+    </app-card>
+  </section>
+</div>
