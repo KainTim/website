@@ -7,10 +7,10 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout
+      - uses: actions/checkout@v6
       - name: Build and push Docker image
         id: push
-        uses: docker/build-push-action
+        uses: docker/build-push-action@v6
         with:
           push: true
           tags: docker.io/tikaiz/website-frontend:latest
