@@ -161,12 +161,6 @@ h2 {
   margin-top: 0.45rem;
 }
 
-.footer {
-  margin-bottom: 0;
-  text-align: center;
-  color: #8b949e;
-}
-
 @media (max-width: 760px) {
   .page-wrap {
     padding-top: 0.5rem;

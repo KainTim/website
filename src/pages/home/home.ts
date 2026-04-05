@@ -29,10 +29,8 @@ interface TimelineItem {
   styleUrl: './home.css',
 })
 export class Home {
-  readonly currentYear = new Date().getFullYear();
-
   readonly hero = {
-    name: 'Alex Carter',
+    name: 'Tim Kainz',
     role: 'Fullstack Developer',
     intro:
       'I build polished web, backend, and mobile products with Angular, C#, and Flutter.',

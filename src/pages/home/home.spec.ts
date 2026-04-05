@@ -25,7 +25,7 @@ describe('Home', () => {
 
   it('should render hero title and project section', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Alex Carter');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Tim Kainz');
     expect(compiled.querySelector('#projects h2')?.textContent).toContain('Featured Projects');
     expect(compiled.querySelector('.hero-cta a[routerlink="/about"]')).toBeTruthy();
   });

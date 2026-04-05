@@ -24,5 +24,6 @@ describe('App', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.sidebar')).toBeTruthy();
     expect(compiled.querySelectorAll('.nav a').length).toBeGreaterThanOrEqual(4);
+    expect(compiled.querySelector('.site-footer')).toBeTruthy();
   });
 });
