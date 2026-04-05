@@ -17,7 +17,7 @@
 .eyebrow {
   width: fit-content;
   margin: 0 0 1rem;
-  padding: 0.3rem 0.7rem;
+  padding: 0.35rem 0.5rem 0.1rem 0.5rem;
   border: 1px solid rgba(88, 166, 255, 0.5);
   border-radius: 999px;
   color: #9ecbff;
