@@ -78,21 +78,13 @@ export class Home {
 
   readonly timeline: TimelineItem[] = [
     {
-      role: 'Senior Fullstack Developer',
-      company: 'Northline Digital',
-      period: '2023 - Present',
+      role: 'Internship - Backend & Architecture Engineer',
+      company: 'Industrie Informatik GmbH',
+      period: '2025',
       highlights: [
-        'Led Angular frontend redesign for enterprise dashboard products.',
-        'Built C# microservices and optimized API response times by 30%.',
-      ],
-    },
-    {
-      role: 'Software Engineer',
-      company: 'CloudMotion Labs',
-      period: '2020 - 2023',
-      highlights: [
-        'Delivered Flutter apps with shared design system and CI pipelines.',
-        'Developed secure backend services with clean architecture patterns.',
+        'Implemented a Spring Boot API for the Tasktimer Application including database access and reporting capabilities.',
+        'Designed and implemented a reliable Jira connectivity solution for the Tasktimer backend, ensuring consistent data synchronization and performance.',
+        'Contributed to architectural discussions and decisions, influencing the overall direction and stability of the Tasktimer application.',
       ],
     },
   ];
