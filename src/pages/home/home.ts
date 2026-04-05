@@ -4,7 +4,7 @@ import { CardComponent } from '../../components/card/card';
 
 interface Skill {
   name: string;
-  category: 'Frontend' | 'Backend' | 'Mobile' | 'Cloud';
+  category: 'Frontend' | 'Backend' | 'Mobile' | 'Cloud' | 'Frontend / Backend';
   level: string;
 }
 
@@ -32,38 +32,47 @@ export class Home {
   readonly hero = {
     name: 'Tim Kainz',
     role: 'Fullstack Developer',
-    intro:
-      'I build polished web, backend, and mobile products with Angular, C#, and Flutter.',
+    intro: 'I build polished web, backend, and mobile products with Angular, C#, and Flutter.',
     focus: 'Focused on performance, clean architecture, and product-minded delivery.',
   };
 
   readonly skills: Skill[] = [
     { name: 'Angular', category: 'Frontend', level: 'Advanced' },
-    { name: 'TypeScript', category: 'Frontend', level: 'Advanced' },
-    { name: 'C# / .NET', category: 'Backend', level: 'Advanced' },
-    { name: 'REST APIs', category: 'Backend', level: 'Advanced' },
+    { name: 'React', category: 'Frontend', level: 'Advanced' },
+    { name: 'Ionic', category: 'Frontend', level: 'Advanced' },
+    { name: 'TypeScript', category: 'Frontend / Backend', level: 'Advanced' },
+    { name: 'Javascript', category: 'Frontend / Backend', level: 'Advanced' },
+    { name: 'Express', category: 'Backend', level: 'Advanced' },
+    { name: 'C# / .NET', category: 'Frontend / Backend', level: 'Advanced' },
+    { name: 'ASP.NET Core', category: 'Backend', level: 'Advanced' },
+    { name: 'WPF', category: 'Frontend', level: 'Advanced' },
+    { name: 'Java', category: 'Backend', level: 'Advanced' },
+    { name: 'Spring Boot', category: 'Backend', level: 'Advanced' },
     { name: 'Flutter', category: 'Mobile', level: 'Advanced' },
-    { name: 'Firebase', category: 'Cloud', level: 'Intermediate' },
   ];
 
   readonly projects: Project[] = [
     {
-      title: 'ClinicFlow Platform',
-      description: 'Patient scheduling and billing dashboard for multi-location clinics.',
-      stack: ['Angular', 'C#', '.NET API', 'PostgreSQL'],
-      impact: 'Reduced booking mistakes by 38% and improved team response speed.',
+      title: 'Tasktimer',
+      description:
+        'Jira time-tracking app with custom reporting and connectivity, build for mobile and web.',
+      stack: ['Ionic', 'React', 'Spring Boot', 'Oracle', 'Web', 'Android', 'iOS'],
+      impact:
+        'Led backend and architectural work: implemented Spring Boot backend, database access for Oracle with reporting capabilities, including reliable Jira connectivity.',
     },
     {
-      title: 'FieldOps Mobile App',
-      description: 'Offline-first mobile app for technicians to manage service tasks.',
-      stack: ['Flutter', 'C#', 'SQLite', 'Azure Functions'],
-      impact: 'Enabled same-day job updates even in low-connectivity zones.',
+      title: 'Synopsis Platform Core',
+      description: 'Main Synopsis Platform codebase (backend + frontend pieces).',
+      stack: ['C#', 'TypeScript', 'HTML', 'Docker', 'Web'],
+      impact:
+        'Contributed via issues, code and investigations (plugin-loader, microfrontend research), influencing platform direction and stability.',
     },
     {
-      title: 'Insights Portal',
-      description: 'Real-time analytics workspace with modular report widgets.',
-      stack: ['Angular', 'SignalR', 'C#', '.NET'],
-      impact: 'Cut reporting time from hours to minutes for operations teams.',
+      title: 'Website SV Hofkirchen (Chess Club)',
+      description: 'Club management web app for the SV Hofkirchen chess club.',
+      stack: ['C#', '.NET', 'Blazor', 'SQLite', 'Web'],
+      impact:
+        'Designed the technical core across backend, database, and Blazor UI: implemented backend services, and partially built the Blazor frontend',
     },
   ];
 

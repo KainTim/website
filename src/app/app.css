@@ -5,8 +5,12 @@
 
 .content {
   max-width: 1500px;
+  min-height: 100svh;
   margin: 0 auto;
-  padding: 1.5rem 1.25rem 4rem;
+  padding: 1.5rem 1.25rem 3rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .sidebar {
@@ -90,7 +94,8 @@
 }
 
 .site-footer {
-  margin-top: 2rem;
+  margin-top: auto;
+  padding-top: 2rem;
   text-align: center;
   color: #8b949e;
 }

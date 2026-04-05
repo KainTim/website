@@ -17,8 +17,8 @@ export class Contact {
   readonly channels: Channel[] = [
     {
       label: 'Email',
-      value: 'alex.carter.dev@mail.com',
-      href: 'mailto:alex.carter.dev@mail.com',
+      value: 'tikaiz@gmx.at',
+      href: 'mailto:tikaiz@gmx.at',
     },
     {
       label: 'Location',
