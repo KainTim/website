@@ -67,6 +67,35 @@ h1 {
   text-decoration: none;
 }
 
+.contact-card button.contact-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.72rem 1rem;
+  border: 1px solid rgba(88, 166, 255, 0.45);
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(31, 111, 235, 0.22), rgba(47, 129, 247, 0.08));
+  color: #e6edf3;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(31, 111, 235, 0.14);
+  transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease, background-color 120ms ease;
+}
+
+.contact-card button.contact-cta:hover,
+.contact-card button.contact-cta:focus-visible {
+  transform: translateY(-1px);
+  border-color: #58a6ff;
+  background: linear-gradient(135deg, rgba(31, 111, 235, 0.35), rgba(47, 129, 247, 0.16));
+  box-shadow: 0 14px 28px rgba(31, 111, 235, 0.22);
+  outline: none;
+}
+
+.contact-card button.contact-cta:active {
+  transform: translateY(0);
+}
+
 .note .card {
   border-color: rgba(47, 129, 247, 0.45);
   background: linear-gradient(120deg, rgba(31, 111, 235, 0.16), rgba(22, 27, 34, 0.92));
@@ -75,6 +104,23 @@ h1 {
 .note p {
   color: #c9d1d9;
   margin-top: 0.75rem;
+}
+
+.contact-inline {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.1rem;
+}
+
+.contact-inline a {
+  word-break: break-word;
+}
+
+.contact-inline .contact-cta {
+  margin-left: auto;
 }
 
 @media (max-width: 760px) {

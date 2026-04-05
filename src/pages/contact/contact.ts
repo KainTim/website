@@ -5,6 +5,7 @@ interface Channel {
   label: string;
   value: string;
   href?: string;
+  hrefLabel?: string;
 }
 
 @Component({
@@ -19,14 +20,19 @@ export class Contact {
       label: 'Email',
       value: 'tikaiz@gmx.at',
       href: 'mailto:tikaiz@gmx.at',
+      hrefLabel: 'Send an email',
     },
     {
       label: 'Location',
-      value: 'Remote / UTC+2',
+      value: 'Remote / UTC+1',
     },
     {
       label: 'Availability',
       value: 'Open to freelance and full-time roles',
     },
   ];
+
+  protected gotoHref(href: string) {
+    window.location.href = href;
+  }
 }

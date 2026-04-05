@@ -13,10 +13,15 @@
       @for (channel of channels; track channel.label) {
       <app-card cardClass="contact-card">
         <p class="label">{{ channel.label }}</p>
-        @if (channel.href) {
-        <a [href]="channel.href">{{ channel.value }}</a>
+        @if (channel.href && channel.hrefLabel) {
+          <div class="contact-inline">
+            <a [href]="channel.href">{{ channel.value }}</a>
+            <button class="contact-cta" type="button" (click)="gotoHref(channel.href)">{{channel.hrefLabel}}</button>
+          </div>
+        } @else if (channel.href) {
+          <a [href]="channel.href">{{ channel.value }}</a>
         } @else {
-        <p class="value">{{ channel.value }}</p>
+          <p class="value">{{ channel.value }}</p>
         }
       </app-card>
       }
